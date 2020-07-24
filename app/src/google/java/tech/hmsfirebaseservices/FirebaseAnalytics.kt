@@ -16,7 +16,7 @@ internal class FirebaseAnalytics(
 
     override fun trackScreen(name: String) {
         activity?.let {
-//            firebaseAnalytics.setCurrentScreen(activity, name, null)
+            firebaseAnalytics.setCurrentScreen(activity, name, null)
         }
     }
 }

@@ -6,5 +6,6 @@ import tech.hmsfirebaseservices.services.Maps
 
 class HmsMaps : Maps {
 
+    // Compile time error - MapFragment is not an android.fragment.app.Fragment subclass
     override fun getFragment(): Fragment = MapFragment()
 }
