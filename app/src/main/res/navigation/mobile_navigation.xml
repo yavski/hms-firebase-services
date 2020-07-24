@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_crashlytics">
+
+    <fragment
+        android:id="@+id/navigation_analytics"
+        android:name="tech.hmsfirebaseservices.presentation.analytics.AnalyticsFragment"
+        android:label="@string/title_analytics"
+        tools:layout="@layout/fragment_analytics" />
+
+    <fragment
+        android:id="@+id/navigation_crashlytics"
+        android:name="tech.hmsfirebaseservices.presentation.crashlytics.CrashlyticsFragment"
+        android:label="@string/title_crashlytics"
+        tools:layout="@layout/fragment_crashlytics" />
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="tech.hmsfirebaseservices.presentation.maps.MapsFragment"
+        android:label="@string/title_maps"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>

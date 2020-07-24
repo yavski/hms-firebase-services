@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HmsFirebaseServices</string>
+    <string name="title_analytics">Analytics</string>
+    <string name="title_crashlytics">Crashlytics</string>
+    <string name="title_maps">Maps</string>
+</resources>

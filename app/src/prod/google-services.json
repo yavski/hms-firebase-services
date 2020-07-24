@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1094278424911",
+    "firebase_url": "https://hms-firebase-services-prod.firebaseio.com",
+    "project_id": "hms-firebase-services-prod",
+    "storage_bucket": "hms-firebase-services-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094278424911:android:761d2a8b4f040a238cbd3a",
+        "android_client_info": {
+          "package_name": "tech.hmsfirebaseservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094278424911-l49lhr38ag030k45u8jlmc1r8tncd0iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6o1i6TxkFnQX_nTEHJEOQ2BQGCh_F-Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094278424911-l49lhr38ag030k45u8jlmc1r8tncd0iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
