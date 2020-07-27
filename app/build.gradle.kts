@@ -94,7 +94,7 @@ dependencies {
     // Huawei
     implementation("com.huawei.agconnect:agconnect-core:1.4.0.300")
     implementation("com.huawei.hms:hianalytics:5.0.1.300")
-    implementation("com.huawei.agconnect:agconnect-crash:1.3.1.300")
+    implementation("com.huawei.agconnect:agconnect-crash:1.4.0.300")
     implementation("com.huawei.hms:maps:4.0.1.301")
 
     // Others

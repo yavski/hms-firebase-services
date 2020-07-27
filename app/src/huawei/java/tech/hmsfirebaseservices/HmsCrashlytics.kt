@@ -15,8 +15,7 @@ internal class HmsCrashlytics(private val agConnectCrash: AGConnectCrash) : Cras
     }
 
     override fun log(message: String) {
-        // TODO: https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/agconnectcrash
-        // Document suggests there is AGConnectCrash#log(message: String) however it does not seem present in version com.huawei.agconnect:agconnect-crash:1.3.1.300
+        agConnectCrash.log(message)
     }
 
 }
