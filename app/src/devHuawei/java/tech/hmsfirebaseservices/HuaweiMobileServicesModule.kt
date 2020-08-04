@@ -5,6 +5,7 @@ import com.huawei.hms.analytics.HiAnalytics
 import org.koin.dsl.module
 import tech.hmsfirebaseservices.services.Analytics
 import tech.hmsfirebaseservices.services.Crashlytics
+import tech.hmsfirebaseservices.services.Maps
 
 val servicesModule = module {
 
@@ -13,4 +14,6 @@ val servicesModule = module {
 
     single { AGConnectCrash.getInstance() }
     single<Crashlytics> { HmsCrashlytics(get()) }
+
+    single<Maps> { HmsMaps() }
 }
