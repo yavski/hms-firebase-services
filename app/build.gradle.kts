@@ -94,8 +94,6 @@ dependencies {
     implementation("androidx.multidex:multidex:2.0.1")
 
     // Google
-//    implementation("com.google.android.material:material:1.1.0")
-    // googleImplementation("com.google.android.material:material:1.1.0")
     implementation("com.google.android.material:material:1.1.0")
     implementation("com.google.maps.android:android-maps-utils:2.0.3")
     implementation("com.google.maps.android:maps-utils-ktx:1.7.0")
