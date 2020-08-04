@@ -9,7 +9,7 @@ import tech.hmsfirebaseservices.services.Maps
 
 val servicesModule = module {
 
-    single { HiAnalytics.getInstance(get()) }
+    single { HiAnalytics.getInstance(get<ActivityProvider>().activeActivity) }
     single<Analytics> { HmsAnalytics(get()) }
 
     single { AGConnectCrash.getInstance() }
