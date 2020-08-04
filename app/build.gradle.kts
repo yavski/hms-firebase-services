@@ -101,7 +101,6 @@ dependencies {
     // Firebase
     "googleImplementation"("com.google.firebase:firebase-analytics:17.2.2")
     "googleImplementation"("com.google.firebase:firebase-crashlytics:17.1.1")
-    "googleImplementation"("com.google.firebase:firebase-analytics:17.2.2")
 
     // Huawei
     "huaweiImplementation"("com.huawei.agconnect:agconnect-core:1.4.0.300")
