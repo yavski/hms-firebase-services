@@ -61,9 +61,21 @@ android {
     }
 }
 
+sourceSets {
+    create("google") {
+        java {
+            srcDir("src/google/java")
+        }
+    }
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+
+    registerFeature("google") {
+        usingSourceSet(sourceSets["google"])
+    }
 }
 
 dependencies {
@@ -82,20 +94,24 @@ dependencies {
     implementation("androidx.multidex:multidex:2.0.1")
 
     // Google
+//    implementation("com.google.android.material:material:1.1.0")
+    // googleImplementation("com.google.android.material:material:1.1.0")
     implementation("com.google.android.material:material:1.1.0")
     implementation("com.google.maps.android:android-maps-utils:2.0.3")
     implementation("com.google.maps.android:maps-utils-ktx:1.7.0")
     implementation("com.google.android.gms:play-services-maps:17.0.0")
 
     // Firebase
-    implementation("com.google.firebase:firebase-analytics:17.2.2")
-    implementation("com.google.firebase:firebase-crashlytics:17.1.1")
+    "googleImplementation"("com.google.firebase:firebase-analytics:17.2.2")
+    "googleImplementation"("com.google.firebase:firebase-analytics:17.2.2")
+    "googleImplementation"("com.google.firebase:firebase-crashlytics:17.1.1")
+    "googleImplementation"("com.google.firebase:firebase-analytics:17.2.2")
 
     // Huawei
-    implementation("com.huawei.agconnect:agconnect-core:1.4.0.300")
-    implementation("com.huawei.hms:hianalytics:5.0.1.300")
-    implementation("com.huawei.agconnect:agconnect-crash:1.4.0.300")
-    implementation("com.huawei.hms:maps:4.0.1.301")
+    "huaweiImplementation"("com.huawei.agconnect:agconnect-core:1.4.0.300")
+    "huaweiImplementation"("com.huawei.hms:hianalytics:5.0.1.300")
+    "huaweiImplementation"("com.huawei.agconnect:agconnect-crash:1.4.0.300")
+    "huaweiImplementation"("com.huawei.hms:maps:5.0.1.300")
 
     // Others
     implementation("org.koin:koin-android:2.1.5")
