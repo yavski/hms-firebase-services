@@ -9,6 +9,15 @@ plugins {
 
 android {
 
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("../debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
+    }
+
     compileSdkVersion(29)
 
     defaultConfig {
