@@ -12,6 +12,7 @@ buildscript {
         // Google
         classpath ("com.google.gms:google-services:4.3.3")
         classpath("com.google.firebase:firebase-crashlytics-gradle:2.2.0")
+        classpath("com.google.firebase:perf-plugin:1.3.1")
 
         // Huawei
         classpath("com.huawei.agconnect:agcp:1.4.0.300")

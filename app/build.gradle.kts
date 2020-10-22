@@ -5,6 +5,7 @@ plugins {
     id("kotlin-android-extensions")
     id("com.google.firebase.crashlytics")
     id("com.huawei.agconnect")
+    id("com.google.firebase.firebase-perf")
 }
 
 android {
@@ -110,11 +111,13 @@ dependencies {
     // Firebase
     "googleImplementation"("com.google.firebase:firebase-analytics:17.2.2")
     "googleImplementation"("com.google.firebase:firebase-crashlytics:17.1.1")
+    "googleImplementation"("com.google.firebase:firebase-perf:19.0.8")
 
     // Huawei
     "huaweiImplementation"("com.huawei.agconnect:agconnect-core:1.4.0.300")
     "huaweiImplementation"("com.huawei.agconnect:agconnect-crash:1.4.0.300")
     "huaweiImplementation"("com.huawei.hms:maps:5.0.1.300")
+    "huaweiImplementation"("com.google.firebase:firebase-perf:19.0.8")
 
     // Others
     implementation("org.koin:koin-android:2.1.5")
